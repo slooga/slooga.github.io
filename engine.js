@@ -1,1 +1,1 @@
-alert("hello world");
+<input type ="button" value="play" onclick="startgame()";/>
