@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-$props = ['some trees sway and', 'a squrrle jumps over your head', '']
+$props = ['some trees sway and', 'a squrrle jumps over your head', 'nil']
 $zhealth = 2
 $selected_item = nil
 $inventory = []
