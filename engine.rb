@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+$thirst_count = 0
 $props = ['some trees sway and', 'a squrrle jumps over your head', 'nil']
 $zhealth = 2
 $selected_item = nil
@@ -260,6 +261,10 @@ def handle_command(cmd, args)
     if cmd == 'back'
       puts 'back to game'
     end
+  elsif $thirst_count == 3
+    puts 'you were killed'
+    puts 'spawning player..'
+    puts "you're are lost in a forest, the trees sway and bushes blow in the wind"
   elsif $zhealth == 0
     current_room[:enemies].delete('zapper')    
     end  
@@ -303,3 +308,7 @@ end
 def world_genarator
   puts tree_randomize()
 end  
+
+  
+
+  
